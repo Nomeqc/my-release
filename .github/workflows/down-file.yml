@@ -20,7 +20,7 @@ jobs:
     
     - name: Run
       run: |
-          curl -o "${OUTPUT}" "${URL}"
+          curl -Lfo "${OUTPUT}" "${URL}"
           git config --global user.email nomeqc@gmail.com
           git config --global user.name Fallrainy
           git add "${OUTPUT}"
