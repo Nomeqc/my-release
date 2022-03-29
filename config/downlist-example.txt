@@ -1,0 +1,2 @@
+https://mirror.nforce.com/pub/speedtests/10mb.bin 10mb.bin
+https://mirror.nforce.com/pub/speedtests/25mb.bin 25mb.bin
