@@ -39,7 +39,8 @@ jobs:
               if [[ -z "$url" ]]; then
                   continue
               fi
-              curl -Lfo "$tmpdir/$name" "$url"
+              echo "下载文件：${url}"
+              curl -# -Lfo "$tmpdir/$name" "$url"
           done <"$file"
           # 
           echo "::set-output name=dir::$tmpdir"
