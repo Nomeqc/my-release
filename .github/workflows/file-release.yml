@@ -21,7 +21,6 @@ jobs:
         id: downloads
         env:
           DOWNLIST: ${{ github.event.inputs.downlist }}
-          
         run: |
           file="$DOWNLIST"
           if [[ "$file" =~ ^https:// ]] || [[ "$file" =~ ^http:// ]]; then
